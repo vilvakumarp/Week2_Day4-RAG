@@ -31,7 +31,7 @@ A Retrieval-Augmented Generation (RAG) application built with Python, Streamlit,
 multi-rag/
 ├── rag_app.py
 ├── requirements.txt
-├── .env                 # Create locally; do not commit
+├── .env                 # Created locally; do not commit
 └── README.md
 ```
 
