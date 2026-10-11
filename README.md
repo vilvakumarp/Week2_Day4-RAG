@@ -1,12 +1,20 @@
 # Multi-PDF RAG Assistant
 
+<<<<<<< HEAD
 A Retrieval-Augmented Generation (RAG) application built with Python, Streamlit, LangChain, FAISS, and OpenAI. Upload multiple PDF documents, ask questions across them, and receive answers grounded in retrieved document excerpts with source filenames and page numbers.
+=======
+A Retrieval-Augmented Generation (RAG) application built with Python, Streamlit, LangChain, FAISS, OpenAI chat, and a local Hugging Face embedding model. Upload multiple PDF documents, ask questions across them, and receive answers grounded in retrieved document excerpts with source filenames and page numbers.
+>>>>>>> 3002076 (git push origin main)
 
 ## Features
 
 - Upload multiple PDF files at once.
 - Extract PDF text and split it into manageable chunks.
+<<<<<<< HEAD
 - Generate embeddings using OpenAI `text-embedding-3-small`.
+=======
+- Generate embeddings locally using Hugging Face `sentence-transformers/all-MiniLM-L6-v2`.
+>>>>>>> 3002076 (git push origin main)
 - Index all uploaded PDFs in one FAISS vector database.
 - Ask questions across the indexed documents using `gpt-4o-mini`.
 - Display retrieved source excerpts with PDF filenames and page numbers.
@@ -31,7 +39,11 @@ A Retrieval-Augmented Generation (RAG) application built with Python, Streamlit,
 multi-rag/
 ├── rag_app.py
 ├── requirements.txt
+<<<<<<< HEAD
 ├── .env                 # Created locally; do not commit
+=======
+├── .env                 # Create locally; do not commit
+>>>>>>> 3002076 (git push origin main)
 └── README.md
 ```
 
@@ -116,7 +128,11 @@ Streamlit will provide a local URL to open in your browser.
 1. **Upload PDFs:** Select multiple PDF documents in the Streamlit interface.
 2. **Extract text:** `PyPDFLoader` extracts page content and metadata.
 3. **Chunk documents:** `RecursiveCharacterTextSplitter` splits content into chunks using a chunk size of 1,000 characters and an overlap of 150 characters.
+<<<<<<< HEAD
 4. **Create embeddings:** OpenAI `text-embedding-3-small` converts chunks into vectors.
+=======
+4. **Create embeddings:** Hugging Face `sentence-transformers/all-MiniLM-L6-v2` converts chunks into vectors locally.
+>>>>>>> 3002076 (git push origin main)
 5. **Build the vector store:** FAISS indexes all chunks from the uploaded PDFs in one searchable store.
 6. **Retrieve evidence:** The retriever returns the six most similar chunks for a question.
 7. **Generate an answer:** OpenAI `gpt-4o-mini` answers using the retrieved excerpts and is instructed to cite source identifiers.
@@ -149,7 +165,11 @@ Install all dependencies with:
 pip install -r requirements.txt
 ```
 
+<<<<<<< HEAD
 The requirements file includes Streamlit, LangChain, the OpenAI integration, community integrations, text splitters, PyPDF, FAISS, and python-dotenv.
+=======
+The requirements file includes Streamlit, LangChain, the OpenAI chat integration, Hugging Face/Sentence Transformers, community integrations, text splitters, PyPDF, FAISS, and python-dotenv.
+>>>>>>> 3002076 (git push origin main)
 
 ## Assignment Deliverables
 
