@@ -1,10 +1,5 @@
 # Multi-PDF RAG Assistant
-
-<<<<<<< HEAD
-A Retrieval-Augmented Generation (RAG) application built with Python, Streamlit, LangChain, FAISS, and OpenAI. Upload multiple PDF documents, ask questions across them, and receive answers grounded in retrieved document excerpts with source filenames and page numbers.
-=======
 A Retrieval-Augmented Generation (RAG) application built with Python, Streamlit, LangChain, FAISS, OpenAI chat, and a local Hugging Face embedding model. Upload multiple PDF documents, ask questions across them, and receive answers grounded in retrieved document excerpts with source filenames and page numbers.
->>>>>>> 3002076 (git push origin main)
 
 ## Features
 
